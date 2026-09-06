@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Digital Design & AI Services | Next-Gen Intelligence & Web Studio</title>
+  <meta name="description" content="Custom Digital Design & AI Services. Delivering cutting-edge AI image generation, AI video generation, prompt engineering, Python automation, Scratch programming, web development, and AI video editing.">
+
+  <!-- Google Fonts: Space Grotesk (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Free Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Neural Mesh / Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo">
+        <div class="logo-icon-wrap">
+          <i class="fa-solid fa-cube"></i>
+        </div>
+        <span class="logo-text">CUSTOM DIGITAL <span class="gradient-text">DESIGN</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Search Bar Trigger & CTA) -->
+      <div class="nav-actions">
+        <!-- Quick Search Bar Trigger -->
+        <button class="search-trigger-btn" id="openSearchBtn" aria-label="Open Search (Ctrl+K)">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="search-placeholder-text">Quick search...</span>
+          <kbd class="shortcut-key">Ctrl K</kbd>
+        </button>
+
+        <!-- Direct WhatsApp Quick Chat in Nav -->
+        <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm nav-wa-btn">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp Chat</span>
+        </a>
+
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">
+          <span>Get Started</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="logo-icon-wrap">
+          <i class="fa-solid fa-cube"></i>
+        </div>
+        <span class="logo-text">CUSTOM DIGITAL <span class="gradient-text">DESIGN</span></span>
+      </div>
+      <button class="close-drawer-btn" id="closeDrawerBtn" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    
+    <div class="drawer-search">
+      <button class="drawer-search-btn" id="drawerSearchBtn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span>Search services, portfolio...</span>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-link"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#about" class="mobile-link"><i class="fa-solid fa-circle-info"></i> About</a></li>
+      <li><a href="#services" class="mobile-link"><i class="fa-solid fa-microchip"></i> Services</a></li>
+      <li><a href="#portfolio" class="mobile-link"><i class="fa-solid fa-layer-group"></i> Portfolio</a></li>
+      <li><a href="#pricing" class="mobile-link"><i class="fa-solid fa-tags"></i> Pricing</a></li>
+      <li><a href="#faq" class="mobile-link"><i class="fa-solid fa-circle-question"></i> FAQs</a></li>
+      <li><a href="#contact" class="mobile-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+    </ul>
+
+    <div class="drawer-footer">
+      <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-full" style="margin-bottom: 10px;">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>WhatsApp Direct Chat</span>
+      </a>
+      <a href="#contact" class="btn btn-primary btn-full">
+        <span>Request a Proposal</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+      <div class="drawer-meta">
+        <p><i class="fa-solid fa-envelope"></i> contact@customdigitaldesign.com</p>
+      </div>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Interactive Search Modal / Spotlight (Ctrl+K) -->
+  <div class="search-modal" id="searchModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="search-modal-card">
+      <div class="search-input-wrapper">
+        <i class="fa-solid fa-magnifying-glass search-modal-icon"></i>
+        <input type="text" id="globalSearchInput" placeholder="Search services, skills, portfolio projects, or pricing..." autocomplete="off">
+        <button class="clear-search-btn" id="clearSearchBtn" aria-label="Clear Search">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <span class="esc-badge">ESC</span>
+      </div>
+
+      <!-- Quick Filter Chips -->
+      <div class="search-filter-chips">
+        <button class="chip active" data-filter="all">All Items</button>
+        <button class="chip" data-filter="service">Services</button>
+        <button class="chip" data-filter="portfolio">Portfolio</button>
+        <button class="chip" data-filter="pricing">Pricing</button>
+      </div>
+
+      <!-- Dynamic Search Results -->
+      <div class="search-results-list" id="searchResultsList">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <div class="search-modal-footer">
+        <div class="search-tips">
+          <span><kbd>↑</kbd> <kbd>↓</kbd> to navigate</span>
+          <span><kbd>↵</kbd> to select</span>
+          <span><kbd>ESC</kbd> to close</span>
+        </div>
+        <span class="studio-badge">Neural Search Engine</span>
+      </div>
+    </div>
+  </div>
+  <div class="modal-backdrop" id="searchBackdrop"></div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <canvas id="neuralCanvas" class="hero-canvas"></canvas>
+      <div class="container hero-container">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>Next-Gen Custom Digital Design & AI Studio</span>
+        </div>
+
+        <h1 class="hero-title">
+          Engineering the Future of <br>
+          <span class="gradient-text glow-text">Digital Design & Applied AI</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          We combine cutting-edge synthetic intelligence with bespoke creative craftsmanship. From photorealistic AI imagery and cinematic AI video to tailored prompt architectures, high-performance Python pipelines, and full-stack web platforms.
+        </p>
+
+        <!-- Inline Quick Action Bar (Hero Search & CTAs) -->
+        <div class="hero-actions-wrapper">
+          <div class="hero-search-bar" id="heroSearchBar">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <input type="text" id="heroInlineSearch" placeholder="What are you looking to create? (e.g. AI Video, Python Bot...)" readonly>
+            <button class="hero-search-btn" id="heroSearchTrigger">
+              <span>Search Services</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20would%20like%20to%20order%20AI%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Order via WhatsApp</span>
+            </a>
+            <a href="#services" class="btn btn-primary">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Explore 7 Core Services</span>
+            </a>
+            <a href="#portfolio" class="btn btn-secondary">
+              <i class="fa-solid fa-eye"></i>
+              <span>View Portfolio</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Metric Highlight Counters -->
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" data-target="320">320+</div>
+            <div class="stat-label">AI Projects Delivered</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="99">99.4%</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="7">7</div>
+            <div class="stat-label">Specialized AI Disciplines</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="24">24/7</div>
+            <div class="stat-label">Turnaround Agility</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-fingerprint"></i> WHO WE ARE</div>
+          <h2 class="section-title">Where Creative Vision Meets <span class="gradient-text">Neural Precision</span></h2>
+          <p class="section-desc">At Custom Digital Design, we bridge the divide between human artistic intent and artificial intelligence algorithms, delivering bespoke digital assets that elevate brands above the noise.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-content">
+            <h3 class="about-heading">Why Custom Digital Design Matters in the AI Era</h3>
+            <p>
+              Standard generic templates and naive one-line prompts produce forgettable, commoditized outputs. At <strong>Custom Digital Design</strong>, we engineer tailored digital systems: proprietary LoRA weights, multi-step prompt pipelines, custom Python automations, and pixel-perfect web experiences built specifically for your brand’s voice.
+            </p>
+            <p>
+              Whether you are an enterprise automating media production, an educator teaching modern visual logic with Scratch, or a creator wanting viral AI video cinematography — our bespoke studio delivers unmatched fidelity, speed, and precision.
+            </p>
+
+            <div class="about-features-list">
+              <div class="feature-item">
+                <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                  <h4>100% Commercial IP Ownership</h4>
+                  <p>All delivered artwork, prompt scripts, codebases, and video assets are completely owned by you.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon"><i class="fa-solid fa-code-merge"></i></div>
+                <div>
+                  <h4>Cross-Discipline Integration</h4>
+                  <p>Seamlessly fusing generative AI with custom Python scripts and modern web frontends.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-cta">
+              <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20would%20like%20to%20learn%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="margin-right: 12px;">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Chat with Team</span>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <span>Meet Our Engineers & Designers</span>
+                <i class="fa-solid fa-arrow-trend-up"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- About Interactive Matrix / Tech Stack Showcase -->
+          <div class="about-matrix-card">
+            <div class="matrix-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">custom_digital_design_stack.json</span>
+            </div>
+            
+            <div class="tech-stack-container">
+              <div class="tech-category">
+                <span class="category-label"><i class="fa-solid fa-brain"></i> Generative AI Models</span>
+                <div class="tech-tags">
+                  <span class="tech-tag"><i class="fa-solid fa-sparkles"></i> Midjourney v6</span>
+                  <span class="tech-tag"><i class="fa-solid fa-wand-magic"></i> Flux.1 Pro</span>
+                  <span class="tech-tag"><i class="fa-solid fa-network-wired"></i> Stable Diffusion XL</span>
+                  <span class="tech-tag"><i class="fa-solid fa-film"></i> Runway Gen-3</span>
+                  <span class="tech-tag"><i class="fa-solid fa-video"></i> Kling & Sora</span>
+                </div>
+              </div>
+
+              <div class="tech-category">
+                <span class="category-label"><i class="fa-solid fa-terminal"></i> Code, Logic & Automation</span>
+                <div class="tech-tags">
+                  <span class="tech-tag"><i class="fa-brands fa-python"></i> Python 3.12</span>
+                  <span class="tech-tag"><i class="fa-solid fa-puzzle-piece"></i> Scratch 3.0</span>
+                  <span class="tech-tag"><i class="fa-solid fa-robot"></i> LangChain / Ollama</span>
+                  <span class="tech-tag"><i class="fa-solid fa-gears"></i> PyTorch & ComfyUI</span>
+                </div>
+              </div>
+
+              <div class="tech-category">
+                <span class="category-label"><i class="fa-solid fa-laptop-code"></i> Web & Video Production</span>
+                <div class="tech-tags">
+                  <span class="tech-tag"><i class="fa-brands fa-html5"></i> Modern HTML5/CSS3</span>
+                  <span class="tech-tag"><i class="fa-brands fa-js"></i> Modern JavaScript</span>
+                  <span class="tech-tag"><i class="fa-solid fa-scissors"></i> AI Auto-Editing</span>
+                  <span class="tech-tag"><i class="fa-solid fa-bullhorn"></i> Topaz Neural 4K</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="matrix-badge">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Validated Production Pipelines</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION (ALL 7 SERVICES WITH ORDER NOW BUTTONS) -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-microchip"></i> SPECIALIZED CAPABILITIES</div>
+          <h2 class="section-title">Comprehensive <span class="gradient-text">AI & Digital Services</span></h2>
+          <p class="section-desc">Tailored technological solutions and creative executions. Click "Order Now" on any service to initiate an instant WhatsApp order or submit an inquiry.</p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services-grid">
+
+          <!-- 1. AI Image Generation -->
+          <article class="service-card" data-service="ai-image-generation">
+            <div class="service-card-glow"></div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <i class="fa-solid fa-image"></i>
+              </div>
+              <span class="service-pricing-badge">From $149</span>
+            </div>
+            <h3 class="service-title">AI Image Generation</h3>
+            <p class="service-desc">
+              Bespoke visual synthesis utilizing Midjourney v6, Flux.1, and custom fine-tuned Stable Diffusion models. We create high-resolution concept art, marketing visuals, hyper-realistic product imagery, and unique brand characters.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> 8K Resolution & Ultra-Detailed Textures</li>
+              <li><i class="fa-solid fa-check"></i> Custom LoRA & Brand Style Training</li>
+              <li><i class="fa-solid fa-check"></i> Commercial Licensing & Raw Up-scales</li>
+            </ul>
+            <div class="service-card-footer">
+              <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20would%20like%20to%20order%20the%20AI%20Image%20Generation%20service%20(From%20$149)." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm order-wa-btn" data-service="AI Image Generation">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Order Now</span>
+              </a>
+              <a href="#contact" class="service-link" data-service-select="AI Image Generation">
+                <span>Inquire</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 2. AI Video Generation -->
+          <article class="service-card" data-service="ai-video-generation">
+            <div class="service-card-glow"></div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <i class="fa-solid fa-video"></i>
+              </div>
+              <span class="service-pricing-badge">From $399</span>
+            </div>
+            <h3 class="service-title">AI Video Generation</h3>
+            <p class="service-desc">
+              Cinematic synthetic video creation powered by Runway Gen-3 Alpha, Kling AI, and Pika Labs. Transform scripts and text concepts into dynamic, camera-controlled motion videos, product teasers, and futuristic ads.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Photorealistic Motion & Camera Trajectory</li>
+              <li><i class="fa-solid fa-check"></i> Text-to-Video & Image-to-Video Synthesis</li>
+              <li><i class="fa-solid fa-check"></i> Consistent Characters Across Multiple Scenes</li>
+            </ul>
+            <div class="service-card-footer">
+              <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20would%20like%20to%20order%20the%20AI%20Video%20Generation%20service%20(From%20$399)." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm order-wa-btn" data-service="AI Video Generation">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Order Now</span>
+              </a>
+              <a href="#contact" class="service-link" data-service-select="AI Video Generation">
+                <span>Inquire</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 3. Prompt Engineering -->
+          <article class="service-card" data-service="prompt-engineering">
+            <div class="service-card-glow"></div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+              <span class="service-pricing-badge">From $199</span>
+            </div>
+            <h3 class="service-title">Prompt Engineering</h3>
+            <p class="service-desc">
+              Scientific prompt architectures and system prompt engineering for OpenAI GPT-4o, Claude 3.5 Sonnet, and open-source LLMs. Maximize output fidelity, eliminate hallucinations, and build robust chain-of-thought workflows.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Structured JSON Schema Extraction</li>
+              <li><i class="fa-solid fa-check"></i> Few-Shot Tuning & Context Window Mastery</li>
+              <li><i class="fa-solid fa-check"></i> Autonomous AI Agent System Directives</li>
+            </ul>
+            <div class="service-card-footer">
+              <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20would%20like%20to%20order%20the%20Prompt%20Engineering%20service%20(From%20$199)." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm order-wa-btn" data-service="Prompt Engineering">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Order Now</span>
+              </a>
+              <a href="#contact" class="service-link" data-service-select="Prompt Engineering">
+                <span>Inquire</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 4. Python Automation & AI -->
+          <article class="service-card" data-service="python">
+            <div class="service-card-glow"></div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <span class="service-pricing-badge">From $349</span>
+            </div>
+            <h3 class="service-title">Python Development & AI</h3>
+            <p class="service-desc">
+              Tailored Python programming for machine learning pipelines, custom API connectors, web scrapers, data processing engines, automated social media schedulers, and standalone neural inference bots.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Fast API & Flask Backend Services</li>
+              <li><i class="fa-solid fa-check"></i> Custom Web Scraping & ETL Data Pipelines</li>
+              <li><i class="fa-solid fa-check"></i> Clean, PEP-8 Compliant & Documented Code</li>
+            </ul>
+            <div class="service-card-footer">
+              <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20would%20like%20to%20order%20the%20Python%20Development%20service%20(From%20$349)." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm order-wa-btn" data-service="Python Development">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Order Now</span>
+              </a>
+              <a href="#contact" class="service-link" data-service-select="Python Development">
+                <span>Inquire</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 5. Scratch Programming -->
+          <article class="service-card" data-service="scratch">
+            <div class="service-card-glow"></div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <i class="fa-solid fa-puzzle-piece"></i>
+              </div>
+              <span class="service-pricing-badge">From $99</span>
+            </div>
+            <h3 class="service-title">Scratch Programming</h3>
+            <p class="service-desc">
+              Creative and interactive visual programming projects using Scratch 3.0. We design educational games, algorithmic simulations, interactive storytelling modules, and STEM learning curriculum tailored for schools and young learners.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Custom Game Mechanics & Sprite Physics</li>
+              <li><i class="fa-solid fa-check"></i> Educational STEM Curriculums & Guides</li>
+              <li><i class="fa-solid fa-check"></i> Interactive Math & Logic Visualizations</li>
+            </ul>
+            <div class="service-card-footer">
+              <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20would%20like%20to%20order%20the%20Scratch%20Programming%20service%20(From%20$99)." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm order-wa-btn" data-service="Scratch Programming">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Order Now</span>
+              </a>
+              <a href="#contact" class="service-link" data-service-select="Scratch Programming">
+                <span>Inquire</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 6. Web Development -->
+          <article class="service-card" data-service="web-development">
+            <div class="service-card-glow"></div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <span class="service-pricing-badge">From $599</span>
+            </div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-desc">
+              High-impact, lightning-fast modern websites, interactive landing pages, portfolio sites, and dark AI-themed SaaS web applications. Built mobile-first with pristine HTML5, CSS3, JavaScript, and modern frameworks.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> 100% Responsive & Cross-Browser Tested</li>
+              <li><i class="fa-solid fa-check"></i> Dark Futuristic Aesthetics & Fluid Animations</li>
+              <li><i class="fa-solid fa-check"></i> SEO Optimized with Sub-Second Load Speeds</li>
+            </ul>
+            <div class="service-card-footer">
+              <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20would%20like%20to%20order%20the%20Web%20Development%20service%20(From%20$599)." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm order-wa-btn" data-service="Web Development">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Order Now</span>
+              </a>
+              <a href="#contact" class="service-link" data-service-select="Web Development">
+                <span>Inquire</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 7. AI Video Editing -->
+          <article class="service-card" data-service="ai-video-editing">
+            <div class="service-card-glow"></div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <span class="service-pricing-badge">From $249</span>
+            </div>
+            <h3 class="service-title">AI Video Editing</h3>
+            <p class="service-desc">
+              Transform raw footage into viral-ready, high-converting video productions. Utilizing AI sound enhancement, neural color grading, automated viral subtitle generation, B-roll insertion, and frame-rate smoothing.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Dynamic AI Animated Captions & Sound FX</li>
+              <li><i class="fa-solid fa-check"></i> Smart Aspect Ratio Framing (9:16, 16:9)</li>
+              <li><i class="fa-solid fa-check"></i> Neural 4K Upscaling & Noise Removal</li>
+            </ul>
+            <div class="service-card-footer">
+              <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20would%20like%20to%20order%20the%20AI%20Video%20Editing%20service%20(From%20$249)." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm order-wa-btn" data-service="AI Video Editing">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Order Now</span>
+              </a>
+              <a href="#contact" class="service-link" data-service-select="AI Video Editing">
+                <span>Inquire</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="section portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-layer-group"></i> FEATURED SHOWCASE</div>
+          <h2 class="section-title">Recent <span class="gradient-text">Creations & Deployments</span></h2>
+          <p class="section-desc">Explore a curated selection of our generative visuals, video productions, automated systems, and responsive web platforms.</p>
+        </div>
+
+        <!-- Portfolio Filter Tabs -->
+        <div class="portfolio-filter-tabs">
+          <button class="filter-tab active" data-category="all">All Projects</button>
+          <button class="filter-tab" data-category="ai-visuals">AI Visuals</button>
+          <button class="filter-tab" data-category="ai-video">AI Video & Motion</button>
+          <button class="filter-tab" data-category="web-code">Web Development</button>
+          <button class="filter-tab" data-category="python-scratch">Python & Scratch</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid" id="portfolioGrid">
+
+          <!-- Project 1: AI Visuals -->
+          <div class="portfolio-card" data-category="ai-visuals" data-id="p1">
+            <div class="portfolio-preview-box visual-synth-1">
+              <div class="preview-badge">AI Image Gen</div>
+              <div class="preview-overlay">
+                <button class="preview-btn" data-modal="p1"><i class="fa-solid fa-expand"></i> View Details</button>
+              </div>
+              <div class="mockup-art art-cyber-city">
+                <i class="fa-solid fa-city"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-meta">
+                <span class="portfolio-category-tag">Midjourney v6 & LoRA</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="portfolio-title">Neo-Tokyo 2099: Cyber Architecture</h3>
+              <p class="portfolio-desc">Bespoke photorealistic 8K concept render series for an upcoming futuristic sci-fi game studio, featuring intricate volumetric lighting.</p>
+            </div>
+          </div>
+
+          <!-- Project 2: AI Video -->
+          <div class="portfolio-card" data-category="ai-video" data-id="p2">
+            <div class="portfolio-preview-box visual-synth-2">
+              <div class="preview-badge">AI Video Gen</div>
+              <div class="preview-overlay">
+                <button class="preview-btn" data-modal="p2"><i class="fa-solid fa-expand"></i> View Details</button>
+              </div>
+              <div class="mockup-art art-kinetic-motion">
+                <i class="fa-solid fa-clapperboard"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-meta">
+                <span class="portfolio-category-tag">Runway Gen-3 & Kling</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="portfolio-title">AURA: Synthetic Luxury Commercial</h3>
+              <p class="portfolio-desc">A fully synthetic 45-second commercial teaser featuring AI-generated hyper-cars, atmospheric physics, and synchronized sound design.</p>
+            </div>
+          </div>
+
+          <!-- Project 3: Web Dev -->
+          <div class="portfolio-card" data-category="web-code" data-id="p3">
+            <div class="portfolio-preview-box visual-synth-3">
+              <div class="preview-badge">Web Development</div>
+              <div class="preview-overlay">
+                <button class="preview-btn" data-modal="p3"><i class="fa-solid fa-expand"></i> View Details</button>
+              </div>
+              <div class="mockup-art art-web-dashboard">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-meta">
+                <span class="portfolio-category-tag">HTML5 / CSS3 / JS</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="portfolio-title">Vortex AI: Neural Analytics Portal</h3>
+              <p class="portfolio-desc">Ultra-responsive, dark-mode analytics landing interface with sub-second performance, glowing glassmorphism, and live charts.</p>
+            </div>
+          </div>
+
+          <!-- Project 4: Python Automation -->
+          <div class="portfolio-card" data-category="python-scratch" data-id="p4">
+            <div class="portfolio-preview-box visual-synth-4">
+              <div class="preview-badge">Python Pipeline</div>
+              <div class="preview-overlay">
+                <button class="preview-btn" data-modal="p4"><i class="fa-solid fa-expand"></i> View Details</button>
+              </div>
+              <div class="mockup-art art-python-bot">
+                <i class="fa-brands fa-python"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-meta">
+                <span class="portfolio-category-tag">Python & OpenAI API</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="portfolio-title">OmniScrape & Synthesizer Bot</h3>
+              <p class="portfolio-desc">Automated asynchronous Python crawler scraping market data, summarizing with LLMs, and publishing scheduled visual infographics.</p>
+            </div>
+          </div>
+
+          <!-- Project 5: Scratch Educational Game -->
+          <div class="portfolio-card" data-category="python-scratch" data-id="p5">
+            <div class="portfolio-preview-box visual-synth-5">
+              <div class="preview-badge">Scratch 3.0</div>
+              <div class="preview-overlay">
+                <button class="preview-btn" data-modal="p5"><i class="fa-solid fa-expand"></i> View Details</button>
+              </div>
+              <div class="mockup-art art-scratch-game">
+                <i class="fa-solid fa-gamepad"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-meta">
+                <span class="portfolio-category-tag">Interactive STEM Project</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="portfolio-title">Cosmic Orbit: Physics Simulator</h3>
+              <p class="portfolio-desc">Interactive orbital mechanics game in Scratch 3.0 featuring multi-body gravity calculations, score tracking, and custom sprite artwork.</p>
+            </div>
+          </div>
+
+          <!-- Project 6: AI Video Editing -->
+          <div class="portfolio-card" data-category="ai-video" data-id="p6">
+            <div class="portfolio-preview-box visual-synth-6">
+              <div class="preview-badge">AI Video Editing</div>
+              <div class="preview-overlay">
+                <button class="preview-btn" data-modal="p6"><i class="fa-solid fa-expand"></i> View Details</button>
+              </div>
+              <div class="mockup-art art-video-cut">
+                <i class="fa-solid fa-scissors"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-meta">
+                <span class="portfolio-category-tag">Neural Audio & Captions</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="portfolio-title">Viral Reels Studio: 10M+ Impression Pack</h3>
+              <p class="portfolio-desc">Complete short-form video edit batch with AI animated subtitles, neural voice restoration, dynamic hooks, and 60fps frame interpolation.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO PREVIEW MODAL -->
+    <div class="portfolio-modal" id="portfolioModal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="portfolio-modal-content">
+        <button class="close-portfolio-modal" id="closePortfolioModal" aria-label="Close Project Preview">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-body-layout" id="portfolioModalBody">
+          <!-- Dynamically populated via JS -->
+        </div>
+      </div>
+    </div>
+    <div class="modal-backdrop" id="portfolioBackdrop"></div>
+
+    <!-- PRICING SECTION (WITH ORDER NOW WHATSAPP BUTTONS) -->
+    <section class="section pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-tags"></i> CLEAR & SCALABLE INVESTMENT</div>
+          <h2 class="section-title">Transparent <span class="gradient-text">Pricing Architecture</span></h2>
+          <p class="section-desc">Straightforward project packages and monthly creative retainers. Choose a plan and click "Order Now" to connect instantly on WhatsApp.</p>
+        </div>
+
+        <!-- Pricing Toggle Switch -->
+        <div class="pricing-toggle-wrap">
+          <span class="toggle-label" id="toggleOneTime">Per Project</span>
+          <label class="switch">
+            <input type="checkbox" id="pricingToggle">
+            <span class="slider round"></span>
+          </label>
+          <span class="toggle-label" id="toggleMonthly">Monthly Retainer <span class="discount-badge">Save 20%</span></span>
+        </div>
+
+        <!-- Pricing Cards Grid -->
+        <div class="pricing-grid">
+
+          <!-- Plan 1: Starter -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="plan-name">Starter AI Pack</h3>
+              <p class="plan-subtitle">Ideal for solopreneurs, creators & micro-projects needing immediate assets.</p>
+              <div class="plan-price">
+                <span class="currency">$</span>
+                <span class="amount" data-onetime="299" data-monthly="239">299</span>
+                <span class="period">/ project</span>
+              </div>
+            </div>
+            <div class="pricing-divider"></div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-circle-check"></i> Up to 20 High-Res AI Images</li>
+              <li><i class="fa-solid fa-circle-check"></i> 1 Cinematic AI Video Clip (15s)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Custom Prompt Engineering Recipe</li>
+              <li><i class="fa-solid fa-circle-check"></i> Basic Python Automation or Scratch Fix</li>
+              <li><i class="fa-solid fa-circle-check"></i> 48-Hour Turnaround</li>
+              <li class="feature-disabled"><i class="fa-solid fa-circle-xmark"></i> Custom Model LoRA Training</li>
+              <li class="feature-disabled"><i class="fa-solid fa-circle-xmark"></i> Dedicated Full-Stack Web App</li>
+            </ul>
+            <div class="pricing-card-actions">
+              <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20would%20like%20to%20order%20the%20Starter%20AI%20Pack%20($299)." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-full order-wa-btn" data-plan="Starter AI Pack">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Order Now via WhatsApp</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary btn-full plan-btn" data-plan="Starter AI Pack">Get Started / Inquire</a>
+            </div>
+          </div>
+
+          <!-- Plan 2: Professional (Featured) -->
+          <div class="pricing-card featured">
+            <div class="popular-tag">MOST POPULAR</div>
+            <div class="pricing-header">
+              <h3 class="plan-name">Pro AI & Web Suite</h3>
+              <p class="plan-subtitle">Complete creative and engineering suite for scaling brands and startups.</p>
+              <div class="plan-price">
+                <span class="currency">$</span>
+                <span class="amount" data-onetime="799" data-monthly="639">799</span>
+                <span class="period">/ project</span>
+              </div>
+            </div>
+            <div class="pricing-divider"></div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-circle-check"></i> 60+ 8K Photorealistic AI Images</li>
+              <li><i class="fa-solid fa-circle-check"></i> 3 Cinematic AI Videos (Up to 60s total)</li>
+              <li><i class="fa-solid fa-circle-check"></i> AI Video Editing with Auto-Captions & FX</li>
+              <li><i class="fa-solid fa-circle-check"></i> Full Responsive Landing Page (Web Dev)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Custom Python Script / Bot Integration</li>
+              <li><i class="fa-solid fa-circle-check"></i> Custom Scratch Game Development</li>
+              <li><i class="fa-solid fa-circle-check"></i> 2 Rounds of Priority Revisions</li>
+            </ul>
+            <div class="pricing-card-actions">
+              <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20would%20like%20to%20order%20the%20Pro%20AI%20%26%20Web%20Suite%20($799)." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-full order-wa-btn" data-plan="Pro AI & Web Suite">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Order Now via WhatsApp</span>
+              </a>
+              <a href="#contact" class="btn btn-primary btn-full plan-btn" data-plan="Pro AI & Web Suite">Choose Pro Suite / Inquire</a>
+            </div>
+          </div>
+
+          <!-- Plan 3: Enterprise -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="plan-name">Enterprise Custom</h3>
+              <p class="plan-subtitle">For organizations requiring tailored neural models, full apps, and SLA support.</p>
+              <div class="plan-price">
+                <span class="currency">$</span>
+                <span class="amount" data-onetime="1,899" data-monthly="1,519">1,899</span>
+                <span class="period">/ project</span>
+              </div>
+            </div>
+            <div class="pricing-divider"></div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-circle-check"></i> Unlimited Generative Asset Production</li>
+              <li><i class="fa-solid fa-circle-check"></i> Custom LoRA & Fine-Tuned Model Weights</li>
+              <li><i class="fa-solid fa-circle-check"></i> Multi-Page Web App or SaaS Frontend</li>
+              <li><i class="fa-solid fa-circle-check"></i> Complex Python Backend & Cloud Pipelines</li>
+              <li><i class="fa-solid fa-circle-check"></i> Enterprise AI Prompt Security & Auditing</li>
+              <li><i class="fa-solid fa-circle-check"></i> 24/7 Dedicated Slack/Discord Channel</li>
+              <li><i class="fa-solid fa-circle-check"></i> Guaranteed 24-Hour SLA Delivery</li>
+            </ul>
+            <div class="pricing-card-actions">
+              <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20would%20like%20to%20order%20the%20Enterprise%20Custom%20Plan%20($1,899+)." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-full order-wa-btn" data-plan="Enterprise Custom">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Order Now via WhatsApp</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary btn-full plan-btn" data-plan="Enterprise Custom">Contact for Custom SLA</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Custom Add-Ons Banner -->
+        <div class="addons-bar">
+          <div class="addons-info">
+            <h4><i class="fa-solid fa-puzzle-piece"></i> Need A Custom Modular Scope?</h4>
+            <p>Order individual services à la carte: Scratch Game ($99), Python Script ($349), AI Video Reel ($249).</p>
+          </div>
+          <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20would%20like%20to%20request%20a%20custom%20estimate%20quote." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Get Quote on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-circle-question"></i> COMMON QUESTIONS</div>
+          <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+          <p class="section-desc">Got questions about commercial usage, source files, or our technical workflows? Here are clear answers.</p>
+        </div>
+
+        <div class="faq-accordion" id="faqAccordion">
+
+          <div class="faq-item active">
+            <button class="faq-question">
+              <span>Do I own full commercial rights to the AI images and videos produced?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, absolutely. Once payment is completed, you receive 100% full commercial rights and intellectual property ownership to all generated images, video cuts, prompt documents, and codebases. You can use, monetize, trademark, and distribute them anywhere globally.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is the standard turnaround time for projects?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Typical delivery times are 24–48 hours for AI Image Generation and Prompt Engineering suites, 2–4 business days for AI Video Generation and Video Editing, and 3–7 business days for custom Python pipelines and full Web Development projects.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can you provide the raw Python source code and Scratch project files?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. All Python automation projects include clean, modular PEP-8 code, a <code>requirements.txt</code> file, and step-by-step execution documentation. Scratch projects are delivered as editable <code>.sb3</code> project files along with asset sprites and logic guides.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What AI models and video tools do you utilize?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We leverage top-tier neural generators including Midjourney v6, Flux.1 Pro, Stable Diffusion XL (ComfyUI), Runway Gen-3 Alpha, Kling AI, Luma Dream Machine, Topaz Neural Video AI, and modern LLMs (GPT-4o, Claude 3.5 Sonnet) combined with proprietary tuning techniques.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How do revisions work if I need adjustments?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Every plan comes with included revision rounds. For visual generation, we iterate on seeds, aspect ratios, and in-painting adjustments until you are completely thrilled with the final result.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL CONTACT SECTION (ENHANCED WITH WHATSAPP & INSTAGRAM) -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-paper-plane"></i> CONTACT & INSTANT CHAT</div>
+          <h2 class="section-title">Start Your <span class="gradient-text">Next Breakthrough</span></h2>
+          <p class="section-desc">Connect directly through our official channels. Message us on WhatsApp for rapid direct chat, follow us on Instagram, or send a detailed project proposal.</p>
+        </div>
+
+        <!-- Direct Social & Channel Connect Highlights -->
+        <div class="contact-channels-grid">
+          <!-- WhatsApp Business Card -->
+          <div class="channel-card channel-whatsapp">
+            <div class="channel-header">
+              <div class="channel-icon-wrap wa-icon-wrap">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="channel-badge wa-badge">
+                <span class="status-dot"></span>
+                <span>Active & Online</span>
+              </div>
+            </div>
+            <h3 class="channel-title">WhatsApp Direct Chat</h3>
+            <p class="channel-desc">
+              Connect directly with our lead developer & AI designer. Fastest way to discuss requirements, get immediate pricing quotes, and place custom orders.
+            </p>
+            <div class="channel-meta">
+              <span><i class="fa-solid fa-phone"></i> +1 (234) 567-890</span>
+              <span><i class="fa-solid fa-clock"></i> Replies in &lt; 15 mins</span>
+            </div>
+            <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20would%20like%20to%20discuss%20a%20new%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-full">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Open WhatsApp Chat Now</span>
+            </a>
+          </div>
+
+          <!-- Instagram Official Card -->
+          <div class="channel-card channel-instagram">
+            <div class="channel-header">
+              <div class="channel-icon-wrap ig-icon-wrap">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="channel-badge ig-badge">
+                <i class="fa-solid fa-sparkles"></i>
+                <span>Daily Drops & DMs</span>
+              </div>
+            </div>
+            <h3 class="channel-title">Official Instagram</h3>
+            <p class="channel-desc">
+              Explore our latest generative AI art showcases, cinematic video reels, prompt tutorials, and design case studies. DM us anytime for collaborations!
+            </p>
+            <div class="channel-meta">
+              <span><i class="fa-brands fa-instagram"></i> @customdigitaldesign</span>
+              <span><i class="fa-solid fa-comment-dots"></i> DMs Monitored</span>
+            </div>
+            <a href="https://instagram.com/customdigitaldesign" target="_blank" rel="noopener noreferrer" class="btn btn-instagram btn-full">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Follow & DM on Instagram</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Detailed Contact Layout (Left Info & Right Interactive Form) -->
+        <div class="contact-layout">
+          <!-- Left Info Cards -->
+          <div class="contact-info-panel">
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-bolt"></i></div>
+              <div class="info-details">
+                <h4>Rapid Response Guarantee</h4>
+                <p>We typically review inquiries and send custom scopes in under 2 hours.</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="info-details">
+                <h4>Direct Email</h4>
+                <p><a href="mailto:contact@customdigitaldesign.com">contact@customdigitaldesign.com</a></p>
+                <span class="status-indicator"><span class="status-dot"></span> Inboxes Monitored Live</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-globe"></i></div>
+              <div class="info-details">
+                <h4>Global Remote Operations</h4>
+                <p>Collaborating seamlessly across US, Europe, and Asia-Pacific timezones.</p>
+              </div>
+            </div>
+
+            <div class="info-trust-box">
+              <div class="trust-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>“Custom Digital Design completely revitalized our product visuals and built an automated Python workflow that saves us 30 hours weekly.”</p>
+              <span class="trust-author">— Alex Reynolds, VP of Product</span>
+            </div>
+          </div>
+
+          <!-- Right Interactive Contact Form -->
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="userName">Your Full Name <span class="required">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-user input-icon"></i>
+                    <input type="text" id="userName" name="name" placeholder="e.g. Sarah Jenkins" required>
+                  </div>
+                  <span class="form-error-msg" id="nameError">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="userEmail">Email Address <span class="required">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-envelope input-icon"></i>
+                    <input type="email" id="userEmail" name="email" placeholder="sarah@company.com" required>
+                  </div>
+                  <span class="form-error-msg" id="emailError">Please enter a valid email address</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="serviceSelect">Primary Service Needed <span class="required">*</span></label>
+                  <div class="input-with-icon select-wrap">
+                    <i class="fa-solid fa-microchip input-icon"></i>
+                    <select id="serviceSelect" name="service" required>
+                      <option value="" disabled selected>Select a Service...</option>
+                      <option value="AI Image Generation">AI Image Generation</option>
+                      <option value="AI Video Generation">AI Video Generation</option>
+                      <option value="Prompt Engineering">Prompt Engineering</option>
+                      <option value="Python Development">Python Development</option>
+                      <option value="Scratch Programming">Scratch Programming</option>
+                      <option value="Web Development">Web Development</option>
+                      <option value="AI Video Editing">AI Video Editing</option>
+                      <option value="Comprehensive Multi-Service">Comprehensive Multi-Service Suite</option>
+                    </select>
+                  </div>
+                  <span class="form-error-msg" id="serviceError">Please select a service</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="budgetSelect">Estimated Budget Range</label>
+                  <div class="input-with-icon select-wrap">
+                    <i class="fa-solid fa-dollar-sign input-icon"></i>
+                    <select id="budgetSelect" name="budget">
+                      <option value="$250 - $500">$250 - $500 (Starter Project)</option>
+                      <option value="$500 - $1,500" selected>$500 - $1,500 (Standard Suite)</option>
+                      <option value="$1,500 - $3,500">$1,500 - $3,500 (Advanced / Web App)</option>
+                      <option value="$3,500+">$3,500+ (Enterprise Custom)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="projectDetails">Project Overview & Objectives <span class="required">*</span></label>
+                <textarea id="projectDetails" name="details" rows="5" placeholder="Describe your creative vision, timeline, specific requirements, or links to reference styles..." required></textarea>
+                <span class="form-error-msg" id="detailsError">Please provide a brief overview of your project</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full submit-btn" id="submitContactBtn">
+                <span class="btn-text">Submit Proposal Request</span>
+                <i class="fa-solid fa-paper-plane btn-icon"></i>
+              </button>
+
+              <p class="form-privacy-note">
+                <i class="fa-solid fa-lock"></i> Your information is strictly confidential. We sign NDAs upon request.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <div class="brand-logo">
+            <div class="logo-icon-wrap">
+              <i class="fa-solid fa-cube"></i>
+            </div>
+            <span class="logo-text">CUSTOM DIGITAL <span class="gradient-text">DESIGN</span></span>
+          </div>
+          <p class="footer-tagline">
+            Specialized studio for Custom Digital Design & Artificial Intelligence services. Fusing computational intelligence with human artistry.
+          </p>
+          <div class="footer-socials">
+            <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://instagram.com/customdigitaldesign" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="javascript:void(0)" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="javascript:void(0)" class="social-link" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+            <a href="javascript:void(0)" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Services & Ordering</h4>
+          <ul class="footer-links">
+            <li><a href="#services" data-service-select="AI Image Generation">AI Image Generation</a></li>
+            <li><a href="#services" data-service-select="AI Video Generation">AI Video Generation</a></li>
+            <li><a href="#services" data-service-select="Prompt Engineering">Prompt Engineering</a></li>
+            <li><a href="#services" data-service-select="Python Development">Python Development</a></li>
+            <li><a href="#services" data-service-select="Scratch Programming">Scratch Programming</a></li>
+            <li><a href="#services" data-service-select="Web Development">Web Development</a></li>
+            <li><a href="#services" data-service-select="AI Video Editing">AI Video Editing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Our Studio</a></li>
+            <li><a href="#portfolio">Featured Portfolio</a></li>
+            <li><a href="#pricing">Pricing Architecture</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact & WhatsApp Chat</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter-col">
+          <h4 class="footer-col-title">Neural Dispatch</h4>
+          <p>Get our bi-weekly breakdown on prompt breakthroughs, AI video models, and Python automation hacks.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="newsletter-input-wrap">
+              <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+              <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe to newsletter">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+          <span class="newsletter-status" id="newsletterStatus"></span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Custom Digital Design & AI Services. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#privacy" onclick="alert('Privacy Policy: All client data, code, prompts, and training assets remain 100% confidential and owned by the client.'); return false;">Privacy Policy</a>
+          <span class="sep">•</span>
+          <a href="#terms" onclick="alert('Terms of Service: Full commercial usage rights granted upon final project milestone clearance.'); return false;">Terms of Service</a>
+          <span class="sep">•</span>
+          <a href="#security" onclick="alert('Security Policy: End-to-end encrypted pipelines and NDA compliant.'); return false;">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick WhatsApp Button -->
+  <a href="https://wa.me/1234567890?text=Hello%20Custom%20Digital%20Design!%20I%20am%20visiting%20your%20website%20and%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" id="floatingWhatsapp" aria-label="Chat with Custom Digital Design on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="floating-whatsapp-tooltip">Chat with us on WhatsApp!</span>
+    <span class="wa-status-dot"></span>
+  </a>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- JavaScript Bundle -->
+  <script src="js/main.js"></script>
+</body>
+</html>
